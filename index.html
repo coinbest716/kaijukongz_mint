@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Live Mint | Kaiju Kongz</title>
+  <meta name="description" content="Chainbreakers NFTs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Chainbreakers NFTs">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?s4">
+</head>
+
+<style>
+    .loader {
+        top: 50%;
+        left: 50%;
+        width: 280px;
+        height: 80px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background: #769c40d4;
+        border-radius: 8px;
+        border: 5px solid #fff;
+        z-index: +11;
+    }
+
+    .loader_text {
+        line-height: 70px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+    }
+
+</style>
+
+<body>
+    <div class="section section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div class="logo m-auto">
+                        <img src="assets/img/logo.gif" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div class="signup-wrap">
+                        <div class="loader" style="display: none;">
+                        	<p class="loader_text">Loading...</p>
+                    	</div>
+                        <div class="signup-sec p-3 mb-2">
+                            <div class="row" style="text-align: left;">
+                                <div class="col-6 col-md-6">
+                                    <p class="m-0">NFT Minted</p>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <p class="m-0 text-end"><span class="nonce">0</span> / <span class="maxTotalSupply">3333</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signup-sec p-3">
+                            <div class="row" style="text-align: left;">
+                                <div class="col-6 col-md-6">
+                                    <p class="m-0">Price</p>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <p class="m-0 text-end"><span class="pricePerToken">0.065</span> Ξ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signup-form mt-4">
+                            <p class="mint-info text-center" style="display: none;">Amount to mint (<span>0</span> max.)</p>
+                            <div class="input-wrap">
+                                <div class="update-btn decrement">
+                                    <button disabled><i class="fas fa-minus"></i></button>
+                                </div>
+                                <div class="qty">0</div>
+                                <div class="update-btn increment">
+                                    <button disabled><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <button id="connect_wallet" class="btn text-uppercase mt-4">Connect Wallet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/jquery.bxslider.min.js"></script>
+<script src="assets/js/jquery.slide-transition.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/keccak256@latest/keccak256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js" integrity="sha512-C63V0mFzwl8KV2fRz0QJNKX0d9877urOLSUq5WUq8nUOhDl69hKdGr9mAvl57k47GNjqEMAtiufsvDnk7xs8+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="assets/js/minting_engine/walletconnect/browser-utils.min.js"></script>
+	<script src="assets/js/minting_engine/walletconnect/web3-provider.min.js"></script>
+	<script src="assets/js/minting_engine/walletconnect/client.min.js"></script>
+	<script src="assets/js/minting_engine/walletconnect/qrcode-modal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+	<script src="assets/js/minting_engine/main.js"></script>
+<script>
+</script>
+</html>

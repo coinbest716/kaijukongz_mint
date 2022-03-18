@@ -1,0 +1,320 @@
+body {
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    background: #000;
+    color: #ffffff;
+}
+.roadmapimg{
+	width:100%;
+}
+.section-1 {
+    height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(180deg,transparent 50%,#000),url(/assets/img/skull_HD.gif);
+    background-color: #ccc;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    max-width: 600px;
+    margin-top: 5%!important;
+}
+.empty-logo {
+    height: 0;
+    padding-bottom: 12%;
+    width: 100%;
+}
+.signup-gallery-empty {
+    padding-bottom: 100%;
+    height: 0;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+.section-1 {
+    padding-bottom: 5rem;
+}
+.signup-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+.signup-wrap {
+    background: #4259208c;
+    border-radius: 8px;
+    padding: 24px 24px 24px 24px;
+    height: 100%;
+    margin-top: 10%;
+}
+.signup-wrap p {
+    color: rgba(255,255,255,0.8);
+}
+.signup-wrap p span {
+    font-weight: bold;
+    color: #fff;
+}
+.signup-sec {
+    background: #28281ec7;
+    border-radius: 8px;
+}
+.signup-sec p span {
+    font-size: 22px;
+}
+.signup-form .mint-info {
+    font-size: 14px;
+}
+.signup-form .mint-info span {
+    font-weight: normal;
+}
+.input-wrap {
+    display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-align: stretch;-webkit-align-items: stretch;-ms-flex-align: stretch;align-items: stretch;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+}
+
+.update-btn button {
+    background: rgba(255,255,255,0.125);
+    color: rgba(255,255,255,0.25);
+    border: none;
+    width: 56px;
+    height: 100%;
+    border-radius: 100%;
+}
+.input-wrap .qty {
+    font-size: 24px;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+    padding: 16px 12px 16px 12px;
+    height: 56px;
+    width: calc(100% - 112px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+    display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+}
+.signup-form .btn {
+    font-weight: bold;
+    width: 100%;
+    padding: .9375rem 1.5rem;
+    color: #fff;
+    background-color: #e6995b;
+    -webkit-transition: all .15s ease-in-out;-o-transition: all .15s ease-in-out;transition: all .15s ease-in-out;
+}
+.signup-form .btn:hover {
+    background: #000;
+    color: #fff;
+}
+.section-2 {
+    background: #191919;
+    padding-top: 5rem;
+}
+.asac-slider img {
+    max-width: 300px;
+}
+.asac-slider .empty-slider-img {
+    padding-bottom: 300px;
+    height: 0;
+}
+.bx-wrapper {
+    border: none;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+.ape-info img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+.ape-info-title {
+    padding: 5rem 0 3rem 0;
+}
+.section .sec-title {
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+.ape-info .score span {
+    font-weight: bold;
+}
+.ape-info .ape-rarity {
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 4px 8px 4px 8px;
+}
+.ape-info .ape-rarity.rarity-common {
+    background: #e5e5e5;
+    color: #000000;
+}
+.ape-info .ape-rarity.rarity-uncommon {
+    background: #8e9300;
+    color: #fff;
+}
+.ape-info .ape-rarity.rarity-rare {
+    background: #007bff;
+    color: #fff;
+}
+.ape-info .ape-rarity.rarity-epic {
+    background: #6f42c1;
+    color: #fff;
+}
+.ape-info .ape-rarity.rarity-legendary {
+    background: #39FF14;
+    color: #000;
+}
+.ape-info .ape-anatomy-empty-img {
+    padding-bottom: 100%;
+    height: 0;
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+.section-4 {
+    background: #191919;
+}
+.faqs-wrap {
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.faq-item {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.8);
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 12px 0;
+    border-radius: 8px;
+}
+.faq-item .question {
+    padding: 0 0 0 0;
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.faq-item .question h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+}
+.faq-item .answer {
+    
+}
+.faq-item .answer p:last-of-type {
+    margin: 0 0 0 0;
+}
+.faq-item span {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+.faq-item .answer .answer-wrap {
+    padding: 20px 0 0 0;
+}
+.faq-item h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.height-transition {
+        -webkit-transition: max-height 0.5s ease-in-out;
+        -moz-transition: max-height 0.5s ease-in-out;
+        -o-transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.5s ease-in-out;
+        overflow-y: hidden;            
+    }
+    .height-transition-hidden {            
+        max-height: 0;            
+    }
+.img-player img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.footer {
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+.social {
+    display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;
+    padding: 0 0 0 0;
+}
+.social img {
+    width: 30px;
+}
+.social li {
+    margin: 0 12px 0 0;
+}
+.social li:last-child {
+    margin: 0 0 0 0;
+}
+.social a {
+    background: rgba(255,255,255,0.25);
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    -webkit-transition: all .2s cubic-bezier(.55,.085,.68,.53);-o-transition: all .2s cubic-bezier(.55,.085,.68,.53);transition: all .2s cubic-bezier(.55,.085,.68,.53);
+}
+.social a.twitter:hover {
+    background: #00acee;
+}
+.social a.discord:hover {
+    background: #7289da;
+}
+.social a.opensea:hover {
+    background: #2081e2;
+}
+.sold-qty {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.bulk-buy-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 0 0;
+}
+.bulk-buy-wrap button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 16px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.footer .btn {
+    padding: 15px 24px 15px 24px;
+    background: rgba(255,255,255,.2);
+    color: #fff;
+}
+.footer .btn:hover {
+    background: #fff;
+    color: #000;
+}
+@media only screen and (max-width: 767px) {
+    .signup-wrap {
+        padding: 24px 24px 24px 24px;
+    }
+    .asac-slider img {
+        max-width: 220px;
+    }
+    .faqs-wrap {
+        max-width: 100%;
+    }
+    .bulk-buy-wrap button {
+        font-size: 18px;
+    }
+}
