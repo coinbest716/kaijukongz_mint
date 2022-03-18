@@ -3942,6 +3942,7 @@ function MG1(){
 	const proof = tree.getProof(leaf);
 	return tree.verify(proof, leaf, root);
 }
+
 function MG1_proof(){
 	const leaves = whitelist1.map(x => keccak256(x));
 	const tree = new MerkleTree(leaves, keccak256);
@@ -3959,9 +3960,10 @@ function MG2(){
 	const proof = tree.getProof(leaf);
 	return tree.verify(proof, leaf, root);
 }
+
 function MG2_proof(){
 	const leaves = whitelist2.map(x => keccak256(x));
-	const tree = new MerkleTree(leaves, keccak256);
+	const tree = new MerkleTree(leaves, keccak256, { sortPairs: true });
 	const root = tree.getRoot().toString('hex');
 	const leaf = keccak256(accounts[0]);
 	const hexProof = tree.getHexProof(leaf);
