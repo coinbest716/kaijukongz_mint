@@ -19,13 +19,13 @@ const keccak256      			= window.keccak256;
 
 var whitelist1 = [
 	"0xbcD70b7436A0EDF418A0E350610F25fe12d2223C",
-	"0xC7922EF4fF72cBCeF878C78323Ba80f837d87d90",
 	"0x0E31e4dbeE13f78423e792b1DF3e26CE5D46CCf4",
-        "0xD6379403D1B83eDFEf41Fe4860ac730A7D6B9AdB",
+    "0xD6379403D1B83eDFEf41Fe4860ac730A7D6B9AdB",
 ];
 
 var whitelist2 = [
-	"0x0E31e4dbeE13f78423e792b1DF3e26CE5D46CCf4"
+	"0x2E940afb4035E846Bc09c387578F2aED1C3c6d0D",
+	"0xD6379403D1B83eDFEf41Fe4860ac730A7D6B9AdB"
 ];
 
 if (typeof web3 !== 'undefined') {
@@ -61,7 +61,7 @@ function MG1_proof(){
 }
 
 function MG2(){
-	const leaves = whitelist1.map(x => keccak256(x));
+	const leaves = whitelist2.map(x => keccak256(x));
 	const tree = new MerkleTree(leaves, keccak256);
 	const root = tree.getRoot().toString('hex');
 	const leaf = keccak256(accounts[0]);
