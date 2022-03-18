@@ -113,7 +113,8 @@ async function enable_web3(){
 			}if(currentSale == 'Public'){
 				BUTTONACTION.attr('data-action', 'mint').html('Mint').prop('disabled', false);
 				$('.update-btn.increment button').prop('disabled', false);
-				$('.update-btn.decrement button').prop('disabled', false);	
+				$('.update-btn.decrement button').prop('disabled', false);
+				limit_per_session = 5;	
 			}else{
 				BUTTONACTION.attr('data-action', 'salefale').html('Sale Not Yet Started').prop('disabled', false);
 				$('.update-btn.increment button').prop('disabled', true);
