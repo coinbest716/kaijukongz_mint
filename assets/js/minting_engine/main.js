@@ -20,7 +20,6 @@ const keccak256      			= window.keccak256;
 var whitelist1 = [
 	"0xbcD70b7436A0EDF418A0E350610F25fe12d2223C",
 	"0x0E31e4dbeE13f78423e792b1DF3e26CE5D46CCf4",
-    "0xD6379403D1B83eDFEf41Fe4860ac730A7D6B9AdB",
 ];
 
 var whitelist2 = [
