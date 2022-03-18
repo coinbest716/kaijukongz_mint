@@ -4002,7 +4002,7 @@ async function enable_web3(){
 					limit_per_session = 0;
 					proofhash = [];
                 }
-			}if(currentSale == 'Public'){
+			}else if(currentSale == 'Public'){
 				BUTTONACTION.attr('data-action', 'mint').html('Mint').prop('disabled', false);
 				$('.update-btn.increment button').prop('disabled', false);
 				$('.update-btn.decrement button').prop('disabled', false);
