@@ -3936,7 +3936,7 @@ async function initApp() {
 
 function MG1(){
 	const leaves = whitelist1.map(x => keccak256(x));
-	const tree = new MerkleTree(leaves, keccak256);
+	const tree = new MerkleTree(leaves, keccak256, { sortPairs: true });
 	const root = tree.getRoot().toString('hex');
 	const leaf = keccak256(accounts[0]);
 	const proof = tree.getProof(leaf);
@@ -3945,7 +3945,7 @@ function MG1(){
 
 function MG1_proof(){
 	const leaves = whitelist1.map(x => keccak256(x));
-	const tree = new MerkleTree(leaves, keccak256);
+	const tree = new MerkleTree(leaves, keccak256, { sortPairs: true });
 	const root = tree.getRoot().toString('hex');
 	const leaf = keccak256(accounts[0]);
 	const hexProof = tree.getHexProof(leaf);
@@ -3954,7 +3954,7 @@ function MG1_proof(){
 
 function MG2(){
 	const leaves = whitelist2.map(x => keccak256(x));
-	const tree = new MerkleTree(leaves, keccak256);
+	const tree = new MerkleTree(leaves, keccak256, { sortPairs: true });
 	const root = tree.getRoot().toString('hex');
 	const leaf = keccak256(accounts[0]);
 	const proof = tree.getProof(leaf);
