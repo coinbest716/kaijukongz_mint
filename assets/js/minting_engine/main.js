@@ -90,7 +90,7 @@ async function enable_web3(){
   
 	  	if( jQuery.inArray( chainID, allowed_chain ) !== -1 ){
 		  	await internal_funcs();
-		  	if(currentSale !== 'Not Active Yet'){
+		  	if(currentSale == 'Whitelist'){
                 if( MG1() === true){
                     BUTTONACTION.attr('data-action', 'mint').html('Mint').prop('disabled', false);
 					$('.update-btn.increment button').prop('disabled', false);
@@ -110,6 +110,10 @@ async function enable_web3(){
 					limit_per_session = 0;
 					proofhash = [];
                 }
+			}if(currentSale == 'Public'){
+				BUTTONACTION.attr('data-action', 'mint').html('Mint').prop('disabled', false);
+				$('.update-btn.increment button').prop('disabled', false);
+				$('.update-btn.decrement button').prop('disabled', false);	
 			}else{
 				BUTTONACTION.attr('data-action', 'salefale').html('Sale Not Yet Started').prop('disabled', false);
 				$('.update-btn.increment button').prop('disabled', true);
@@ -155,6 +159,8 @@ async function internal_funcs(){
 	await methods.saleState().call(function(error, result){
 		if(result === '1'){
 			currentSale = 'Whitelist';
+		}else if(result === '2'){
+			currentSale = 'Public';
 		}else{
 			currentSale = 'Not Active Yet';
 		}
@@ -203,8 +209,24 @@ function mint(nfts){
   return new Promise(function (resolve, reject){
 		var total = (price * nfts);
 		if(currentSale == 'Whitelist'){
-			console.log(nfts, proofhash);
 			methods.presale(nfts, proofhash).send({
+				maxPriorityFeePerGas: null,
+				maxFeePerGas: null,
+				from:   accounts[0],
+				value:  web3.utils.toWei( total.toString() , "ether")
+			}).then(function(result, error){
+				console.log(error);
+				if (error) {
+					reject(error);
+				} else {
+					resolve(result);
+				}
+			}).catch(function(error){
+				console.log(error);
+				reject(error);
+			});
+		}else if(currentSale == 'Public'){
+			methods.publicsale(nfts).send({
 				maxPriorityFeePerGas: null,
 				maxFeePerGas: null,
 				from:   accounts[0],
